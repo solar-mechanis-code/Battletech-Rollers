@@ -202,9 +202,5 @@ This is a convenience tool for campaign use and is not an “official” BattleT
 
 ## License
 
-You can add any license you want (MIT is common for small utilities).
-Add a `LICENSE` file in the repo root if you want GitHub to display it.
+MIT License © 2026 Solar Mechanis. See the `LICENSE` file for details.
 
-```
-::contentReference[oaicite:0]{index=0}
-```
