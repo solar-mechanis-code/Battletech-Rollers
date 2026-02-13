@@ -1,0 +1,940 @@
+{
+  "Achilles": {
+    "year": 2582,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Achilles (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Achilles_(DropShip_class)"
+  },
+  "Aesir": {
+    "year": 3077,
+    "tech": "Clan",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Aesir (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Aesir_(DropShip_class)"
+  },
+  "Aqueduct": {
+    "year": 2638,
+    "tech": "IS",
+    "rarity": "common",
+    "evidence": [
+      "common: /\\bmost common\\b/",
+      "common: /\\bubiquitous\\b/"
+    ],
+    "source_title": "Aqueduct",
+    "source_url": "https://www.sarna.net/wiki/Aqueduct"
+  },
+  "Arcadia": {
+    "year": 3066,
+    "tech": "Clan",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Arcadia (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Arcadia_(DropShip_class)"
+  },
+  "Argo": {
+    "year": 2762,
+    "tech": "IS",
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bprototype\\b/"
+    ],
+    "source_title": "Argo (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Argo_(DropShip_class)"
+  },
+  "Arondight": {
+    "year": 3075,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Arondight",
+    "source_url": "https://www.sarna.net/wiki/Arondight"
+  },
+  "Assault Triumph": {
+    "year": 3062,
+    "tech": null,
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Assault Triumph",
+    "source_url": "https://www.sarna.net/wiki/Assault_Triumph"
+  },
+  "Aurora": {
+    "year": 3062,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Aurora",
+    "source_url": "https://www.sarna.net/wiki/Aurora"
+  },
+  "Avenger": {
+    "year": 2816,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Avenger (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Avenger_(DropShip_class)"
+  },
+  "Behemoth": {
+    "year": 2782,
+    "tech": "IS",
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bprototype\\b/"
+    ],
+    "source_title": "Behemoth (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Behemoth_(DropShip_class)"
+  },
+  "Black Eagle": {
+    "year": 2453,
+    "tech": "IS",
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bexperimental\\b/"
+    ],
+    "source_title": "Black Eagle (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Black_Eagle_(DropShip_class)"
+  },
+  "Broadsword": {
+    "year": 2979,
+    "tech": "Clan",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Broadsword",
+    "source_url": "https://www.sarna.net/wiki/Broadsword"
+  },
+  "Buccaneer": {
+    "year": 2708,
+    "tech": "IS",
+    "rarity": "common",
+    "evidence": [
+      "common: /\\bmost common\\b/"
+    ],
+    "source_title": "Buccaneer (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Buccaneer_(DropShip_class)"
+  },
+  "Cargoking": {
+    "year": 2790,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Cargoking",
+    "source_url": "https://www.sarna.net/wiki/Cargoking"
+  },
+  "Cargomaster": {
+    "year": 2790,
+    "tech": "IS",
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bprototype\\b/"
+    ],
+    "source_title": "Cargomaster",
+    "source_url": "https://www.sarna.net/wiki/Cargomaster"
+  },
+  "Carrier": {
+    "year": 2882,
+    "tech": "Clan",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Carrier",
+    "source_url": "https://www.sarna.net/wiki/Carrier"
+  },
+  "Castrum": {
+    "year": 3097,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Castrum",
+    "source_url": "https://www.sarna.net/wiki/Castrum"
+  },
+  "Cavalier": {
+    "year": 2662,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Cavalier (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Cavalier_(DropShip_class)"
+  },
+  "Claymore": {
+    "year": 3054,
+    "tech": null,
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bprototype\\b/",
+      "rare: /\\bexperimental\\b/"
+    ],
+    "source_title": "Claymore (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Claymore_(DropShip_class)"
+  },
+  "Clippership IV": {
+    "year": 2422,
+    "tech": "IS",
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bexperimental\\b/"
+    ],
+    "source_title": "Clippership IV",
+    "source_url": "https://www.sarna.net/wiki/Clippership_IV"
+  },
+  "Clippership V": {
+    "year": 5626,
+    "tech": "IS",
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bexperimental\\b/"
+    ],
+    "source_title": "Clippership V",
+    "source_url": "https://www.sarna.net/wiki/Clippership_V"
+  },
+  "Cockatrice": {
+    "year": 3062,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Cockatrice",
+    "source_url": "https://www.sarna.net/wiki/Cockatrice"
+  },
+  "Colossus": {
+    "year": 2718,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Colossus (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Colossus_(DropShip_class)"
+  },
+  "Condor": {
+    "year": 2801,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Condor (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Condor_(DropShip_class)"
+  },
+  "Confederate": {
+    "year": 2602,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Confederate",
+    "source_url": "https://www.sarna.net/wiki/Confederate"
+  },
+  "Conquistador": {
+    "year": 3063,
+    "tech": null,
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Conquistador (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Conquistador_(DropShip_class)"
+  },
+  "Czar": {
+    "year": 2462,
+    "tech": "IS",
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bprototype\\b/",
+      "rare: /\\bexperimental\\b/"
+    ],
+    "source_title": "Czar",
+    "source_url": "https://www.sarna.net/wiki/Czar"
+  },
+  "Danais": {
+    "year": 2728,
+    "tech": "IS",
+    "rarity": "common",
+    "evidence": [
+      "common: /\\bubiquitous\\b/"
+    ],
+    "source_title": "Danais (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Danais_(DropShip_class)"
+  },
+  "Dictator": {
+    "year": 2600,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Dictator",
+    "source_url": "https://www.sarna.net/wiki/Dictator"
+  },
+  "Dove": {
+    "year": 2801,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Dove (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Dove_(DropShip_class)"
+  },
+  "Dragau": {
+    "year": 3065,
+    "tech": "IS",
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bexperimental\\b/"
+    ],
+    "source_title": "Dragau",
+    "source_url": "https://www.sarna.net/wiki/Dragau"
+  },
+  "Dragau II": {
+    "year": 3085,
+    "tech": "IS",
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bexperimental\\b/"
+    ],
+    "source_title": "Dragau II",
+    "source_url": "https://www.sarna.net/wiki/Dragau_II"
+  },
+  "Drost IIA": {
+    "year": 2470,
+    "tech": "IS",
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bhandful\\b/"
+    ],
+    "source_title": "Drost IIA",
+    "source_url": "https://www.sarna.net/wiki/Drost_IIA"
+  },
+  "Duat": {
+    "year": 3131,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Duat",
+    "source_url": "https://www.sarna.net/wiki/Duat"
+  },
+  "Elephant": {
+    "year": 2652,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Elephant",
+    "source_url": "https://www.sarna.net/wiki/Elephant"
+  },
+  "Excalibur": {
+    "year": 2786,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Excalibur (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Excalibur_(DropShip_class)"
+  },
+  "Fortress": {
+    "year": 2613,
+    "tech": "IS",
+    "rarity": "very_rare",
+    "evidence": [
+      "very_rare: /\\bneared extinction\\b/",
+      "rare: /\\brarely seen\\b/"
+    ],
+    "source_title": "Fortress",
+    "source_url": "https://www.sarna.net/wiki/Fortress"
+  },
+  "Fury": {
+    "year": 2638,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Fury (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Fury_(DropShip_class)"
+  },
+  "Gaajian": {
+    "year": 2485,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Gaajian",
+    "source_url": "https://www.sarna.net/wiki/Gaajian"
+  },
+  "Gazelle": {
+    "year": 2531,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Gazelle",
+    "source_url": "https://www.sarna.net/wiki/Gazelle"
+  },
+  "Gorgon": {
+    "year": 3096,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Gorgon (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Gorgon_(DropShip_class)"
+  },
+  "Hamilcar": {
+    "year": 3054,
+    "tech": null,
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Hamilcar (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Hamilcar_(DropShip_class)"
+  },
+  "Hannibal": {
+    "year": 3055,
+    "tech": null,
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Hannibal (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Hannibal_(DropShip_class)"
+  },
+  "Hector": {
+    "year": null,
+    "tech": null,
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Hector (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Hector_(DropShip_class)"
+  },
+  "Hercules": {
+    "year": 3053,
+    "tech": null,
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bprototype\\b/"
+    ],
+    "source_title": "Hercules (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Hercules_(DropShip_class)"
+  },
+  "Hoshiryokou": {
+    "year": 2480,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Hoshiryokou",
+    "source_url": "https://www.sarna.net/wiki/Hoshiryokou"
+  },
+  "Howdah": {
+    "year": 2695,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Howdah",
+    "source_url": "https://www.sarna.net/wiki/Howdah"
+  },
+  "Hrothgar": {
+    "year": 3500,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Hrothgar",
+    "source_url": "https://www.sarna.net/wiki/Hrothgar"
+  },
+  "Interdictor": {
+    "year": 3074,
+    "tech": "IS",
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bexperimental\\b/"
+    ],
+    "source_title": "Interdictor",
+    "source_url": "https://www.sarna.net/wiki/Interdictor"
+  },
+  "Intruder": {
+    "year": 2655,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Intruder (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Intruder_(DropShip_class)"
+  },
+  "Isegrim": {
+    "year": 3083,
+    "tech": "Clan",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Isegrim",
+    "source_url": "https://www.sarna.net/wiki/Isegrim"
+  },
+  "Jumbo": {
+    "year": 2423,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Jumbo",
+    "source_url": "https://www.sarna.net/wiki/Jumbo"
+  },
+  "Kuan Ti": {
+    "year": 3055,
+    "tech": null,
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bprototype\\b/"
+    ],
+    "source_title": "Kuan Ti",
+    "source_url": "https://www.sarna.net/wiki/Kuan_Ti"
+  },
+  "League": {
+    "year": null,
+    "tech": null,
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "League (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/League_(DropShip_class)"
+  },
+  "Lee": {
+    "year": 2756,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Lee (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Lee_(DropShip_class)"
+  },
+  "Leopard": {
+    "year": 2537,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Leopard (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Leopard_(DropShip_class)"
+  },
+  "Leopard CV": {
+    "year": 2581,
+    "tech": "IS",
+    "rarity": "common",
+    "evidence": [
+      "common: /\\bmost common\\b/"
+    ],
+    "source_title": "Leopard CV (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Leopard_CV_(DropShip_class)"
+  },
+  "Lion": {
+    "year": 2595,
+    "tech": "IS",
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bhandful\\b/"
+    ],
+    "source_title": "Lion",
+    "source_url": "https://www.sarna.net/wiki/Lion"
+  },
+  "Lung Wang": {
+    "year": 3055,
+    "tech": null,
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bprototype\\b/",
+      "rare: /\\bexperimental\\b/"
+    ],
+    "source_title": "Lung Wang",
+    "source_url": "https://www.sarna.net/wiki/Lung_Wang"
+  },
+  "Lung Wang P2": {
+    "year": 3055,
+    "tech": null,
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bprototype\\b/",
+      "rare: /\\bexperimental\\b/"
+    ],
+    "source_title": "Lung Wang P2",
+    "source_url": "https://www.sarna.net/wiki/Lung_Wang_P2"
+  },
+  "M-3 Drone": {
+    "year": 2698,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "M-3 Drone",
+    "source_url": "https://www.sarna.net/wiki/M-3_Drone"
+  },
+  "Mammoth": {
+    "year": 2658,
+    "tech": "IS",
+    "rarity": "uncommon",
+    "evidence": [
+      "common: /\\bmainstay\\b/",
+      "uncommon: /\\buncommon\\b/"
+    ],
+    "source_title": "Mammoth",
+    "source_url": "https://www.sarna.net/wiki/Mammoth"
+  },
+  "Manatee": {
+    "year": 2449,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Manatee",
+    "source_url": "https://www.sarna.net/wiki/Manatee"
+  },
+  "Mercer": {
+    "year": 3065,
+    "tech": "Clan",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Mercer (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Mercer_(DropShip_class)"
+  },
+  "Merlin": {
+    "year": 3063,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Merlin (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Merlin_(DropShip_class)"
+  },
+  "Mingo": {
+    "year": 2315,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Mingo",
+    "source_url": "https://www.sarna.net/wiki/Mingo"
+  },
+  "Miraborg": {
+    "year": 3053,
+    "tech": "Clan",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Miraborg (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Miraborg_(DropShip_class)"
+  },
+  "Monarch": {
+    "year": 2759,
+    "tech": "IS",
+    "rarity": "common",
+    "evidence": [
+      "common: /\\bmost common\\b/"
+    ],
+    "source_title": "Monarch",
+    "source_url": "https://www.sarna.net/wiki/Monarch"
+  },
+  "Mule": {
+    "year": 2737,
+    "tech": "IS",
+    "rarity": "common",
+    "evidence": [
+      "common: /\\bubiquitous\\b/",
+      "common: /\\bcommonly encountered\\b/"
+    ],
+    "source_title": "Mule",
+    "source_url": "https://www.sarna.net/wiki/Mule"
+  },
+  "Mule-II": {
+    "year": 2737,
+    "tech": "IS",
+    "rarity": "common",
+    "evidence": [
+      "common: /\\bubiquitous\\b/",
+      "common: /\\bcommonly encountered\\b/"
+    ],
+    "source_title": "Mule-II",
+    "source_url": "https://www.sarna.net/wiki/Mule-II"
+  },
+  "Nagasawa": {
+    "year": 3115,
+    "tech": "Clan",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Nagasawa (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Nagasawa_(DropShip_class)"
+  },
+  "Nagumo": {
+    "year": 3056,
+    "tech": null,
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bprototype\\b/"
+    ],
+    "source_title": "Nagumo",
+    "source_url": "https://www.sarna.net/wiki/Nagumo"
+  },
+  "Nekohono'o": {
+    "year": 3065,
+    "tech": null,
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bexperimental\\b/"
+    ],
+    "source_title": "Nekohono'o",
+    "source_url": "https://www.sarna.net/wiki/Nekohono%27o"
+  },
+  "Noruff": {
+    "year": 3056,
+    "tech": "Clan",
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bprototype\\b/"
+    ],
+    "source_title": "Noruff (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Noruff_(DropShip_class)"
+  },
+  "Octopus": {
+    "year": 3051,
+    "tech": null,
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Octopus",
+    "source_url": "https://www.sarna.net/wiki/Octopus"
+  },
+  "Okinawa": {
+    "year": 3055,
+    "tech": null,
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Okinawa (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Okinawa_(DropShip_class)"
+  },
+  "Outpost": {
+    "year": 3063,
+    "tech": "Clan",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Outpost (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Outpost_(DropShip_class)"
+  },
+  "Overlord": {
+    "year": 2762,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Overlord (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Overlord_(DropShip_class)"
+  },
+  "Overlord A3": {
+    "year": 3058,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Overlord A3",
+    "source_url": "https://www.sarna.net/wiki/Overlord_A3"
+  },
+  "Overlord-C": {
+    "year": 2830,
+    "tech": "Clan",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Overlord-C",
+    "source_url": "https://www.sarna.net/wiki/Overlord-C"
+  },
+  "Pentagon": {
+    "year": 2623,
+    "tech": "IS",
+    "rarity": "very_rare",
+    "evidence": [
+      "very_rare: /\\bextinct\\b/"
+    ],
+    "source_title": "Pentagon",
+    "source_url": "https://www.sarna.net/wiki/Pentagon"
+  },
+  "Polaris": {
+    "year": 3100,
+    "tech": "Clan",
+    "rarity": "uncommon",
+    "evidence": [
+      "uncommon: /\\bproduced in limited numbers\\b/"
+    ],
+    "source_title": "Polaris (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Polaris_(DropShip_class)"
+  },
+  "Princess": {
+    "year": 2657,
+    "tech": "IS",
+    "rarity": "uncommon",
+    "evidence": [
+      "uncommon: /\\blimited production\\b/"
+    ],
+    "source_title": "Princess (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Princess_(DropShip_class)"
+  },
+  "Pueblo": {
+    "year": 2673,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Pueblo",
+    "source_url": "https://www.sarna.net/wiki/Pueblo"
+  },
+  "Rose": {
+    "year": 3054,
+    "tech": null,
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Rose (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Rose_(DropShip_class)"
+  },
+  "Sassanid": {
+    "year": 2875,
+    "tech": "Clan",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Sassanid",
+    "source_url": "https://www.sarna.net/wiki/Sassanid"
+  },
+  "Saturn": {
+    "year": 2243,
+    "tech": "IS",
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bprototype\\b/",
+      "rare: /\\bexperimental\\b/"
+    ],
+    "source_title": "Saturn (DropShuttle class)",
+    "source_url": "https://www.sarna.net/wiki/Saturn_(DropShuttle_class)"
+  },
+  "Scout": {
+    "year": null,
+    "tech": null,
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Scout (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Scout_(DropShip_class)"
+  },
+  "Seeker": {
+    "year": 2815,
+    "tech": "IS",
+    "rarity": "common",
+    "evidence": [
+      "common: /\\bmost common\\b/"
+    ],
+    "source_title": "Seeker",
+    "source_url": "https://www.sarna.net/wiki/Seeker"
+  },
+  "Seleucus": {
+    "year": 3113,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Seleucus",
+    "source_url": "https://www.sarna.net/wiki/Seleucus"
+  },
+  "Stork": {
+    "year": 2801,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Stork (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Stork_(DropShip_class)"
+  },
+  "Sylvester": {
+    "year": 2524,
+    "tech": null,
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Sylvester (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Sylvester_(DropShip_class)"
+  },
+  "Taihou": {
+    "year": 3079,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Taihou",
+    "source_url": "https://www.sarna.net/wiki/Taihou"
+  },
+  "Talon": {
+    "year": null,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Talon (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Talon_(DropShip_class)"
+  },
+  "Tiamat": {
+    "year": 3075,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Tiamat (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Tiamat_(DropShip_class)"
+  },
+  "Titan": {
+    "year": 2647,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Titan (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Titan_(DropShip_class)"
+  },
+  "Triumph": {
+    "year": 2593,
+    "tech": "IS",
+    "rarity": "common",
+    "evidence": [
+      "common: /\\bmost common\\b/"
+    ],
+    "source_title": "Triumph",
+    "source_url": "https://www.sarna.net/wiki/Triumph"
+  },
+  "Trojan": {
+    "year": 2745,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Trojan",
+    "source_url": "https://www.sarna.net/wiki/Trojan"
+  },
+  "Trutzburg": {
+    "year": 3112,
+    "tech": "IS",
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bmuch rarer\\b/"
+    ],
+    "source_title": "Trutzburg",
+    "source_url": "https://www.sarna.net/wiki/Trutzburg"
+  },
+  "Union": {
+    "year": 2708,
+    "tech": "IS",
+    "rarity": "common",
+    "evidence": [
+      "common: /\\bubiquitous\\b/"
+    ],
+    "source_title": "Union (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Union_(DropShip_class)"
+  },
+  "Union-C": {
+    "year": 2829,
+    "tech": "Clan",
+    "rarity": "common",
+    "evidence": [
+      "common: /\\bmost common\\b/"
+    ],
+    "source_title": "Union-C",
+    "source_url": "https://www.sarna.net/wiki/Union-C"
+  },
+  "Union-X": {
+    "year": 3065,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Union-X",
+    "source_url": "https://www.sarna.net/wiki/Union-X"
+  },
+  "Vampire": {
+    "year": 2715,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Vampire",
+    "source_url": "https://www.sarna.net/wiki/Vampire"
+  },
+  "Vanir": {
+    "year": 3077,
+    "tech": "Clan",
+    "rarity": "uncommon",
+    "evidence": [
+      "uncommon: /\\blimited production\\b/"
+    ],
+    "source_title": "Vanir",
+    "source_url": "https://www.sarna.net/wiki/Vanir"
+  },
+  "Vengeance": {
+    "year": 2682,
+    "tech": "IS",
+    "rarity": "rare",
+    "evidence": [
+      "rare: /\\bprototype\\b/"
+    ],
+    "source_title": "Vengeance (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Vengeance_(DropShip_class)"
+  },
+  "Vulture": {
+    "year": 2312,
+    "tech": "IS",
+    "rarity": "unknown",
+    "evidence": [],
+    "source_title": "Vulture (DropShip class)",
+    "source_url": "https://www.sarna.net/wiki/Vulture_(DropShip_class)"
+  }
+}
