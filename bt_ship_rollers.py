@@ -96,7 +96,7 @@ RARITY_WEIGHT = {
     "common": 10.0,
     "uncommon": 3.0,
     "rare": 1.0,
-    "very_rare": 0.05,
+    "very_rare": 0.01,
     "unknown": 1.0,
 }
 
@@ -126,7 +126,7 @@ LOCAL_OVERRIDES = {
 def build_dropship_db():
     """
     Build DB from DROPSHIP_OVERRIDES if available (preferred),
-    otherwise fall back to an empty list and warn.
+    otherwise fall back to an empty list.
     """
     db = []
 
@@ -138,11 +138,9 @@ def build_dropship_db():
                 "year": data.get("year"),
                 "rarity": data.get("rarity") if data.get("rarity") is not None else "unknown",
             })
-        # Stable ordering for nicer output (optional)
         db.sort(key=lambda d: d["name"].lower())
         return db
 
-    # If overrides aren't present, you can still run, but there will be no DS data.
     return db
 
 
@@ -161,7 +159,7 @@ def apply_overrides(dropship_db, overrides):
 
 
 DROPSHIP_DB = build_dropship_db()
-DROPSHIP_DB = apply_overrides(DROPSHIP_DB, LOCAL_OVERRIDES)  # your patch layer
+DROPSHIP_DB = apply_overrides(DROPSHIP_DB, LOCAL_OVERRIDES)
 
 
 def weighted_choice(items, weights):
@@ -197,15 +195,6 @@ def roll_dropship(
     include_unknown_rarity=True,
     include_unknown_tech=True
 ):
-    """
-    tech_choice: "IS", "Clan", or "Any"
-    year: int or None (chronology filter: intro year <= year)
-    strict_year: if True, excludes entries with unknown intro year when year filter is set
-    rarity_mode: "common", "common_uncommon", or "any"
-    include_unknown_rarity: include 'unknown' rarity entries in the pool?
-    include_unknown_tech: include 'Unknown' tech entries when filtering to IS/Clan?
-    """
-
     if not DROPSHIP_DB:
         return "No DropShip data loaded. Run build_dropship_overrides.py first."
 
@@ -274,7 +263,6 @@ def interactive_dropship_roller():
         print("Run build_dropship_overrides.py (F5) to generate dropship_overrides.py, then run this again.\n")
         return
 
-    # Tech base
     tech_raw = input("Tech base? (IS / Clan / Any) [Any]: ").strip().lower()
     if tech_raw in ("q", "quit", "exit"):
         print("Terminated.")
@@ -294,7 +282,6 @@ def interactive_dropship_roller():
             return
         include_unknown_tech = (ans not in ("n", "no"))
 
-    # Chronology
     year = None
     year_raw = input("Filter by in-universe year? (blank = no filter): ").strip().lower()
     if year_raw in ("q", "quit", "exit"):
@@ -317,7 +304,6 @@ def interactive_dropship_roller():
             return
         strict_year = (sy in ("y", "yes"))
 
-    # Rarity mode
     print("\nRarity mode:")
     print("  1) common only")
     print("  2) common + uncommon")
@@ -333,7 +319,6 @@ def interactive_dropship_roller():
     elif rm == "2":
         rarity_mode = "common_uncommon"
 
-    # Default behavior: unknown rarity excluded for restricted modes
     include_unknown_rarity = True
     if rarity_mode != "any":
         ans = input("Include 'Unknown rarity' DropShips in this rarity filter? (y/n) [n]: ").strip().lower()
@@ -381,25 +366,156 @@ def interactive_dropship_roller():
             return
 
 
+# =============================
+# Primitive JumpShip roller
+# =============================
+
+# Safe import: roller still runs even if you haven't created primitive_jumpships.py yet
+try:
+    from primitive_jumpships import PRIMITIVE_JUMPSHIP_DB, PRIMITIVE_RARITY_WEIGHTS
+except Exception:
+    PRIMITIVE_JUMPSHIP_DB = []
+    PRIMITIVE_RARITY_WEIGHTS = {
+        "common": 1.0,
+        "uncommon": 0.6,
+        "rare": 0.25,
+        "very_rare": 0.01,
+        "unknown": 0.5,
+    }
+
+
+def _prompt_int(prompt, allow_blank=False):
+    while True:
+        raw = input(prompt).strip()
+        if allow_blank and raw == "":
+            return None
+        if raw.lower() in ("q", "quit", "exit"):
+            return "QUIT"
+        try:
+            return int(raw)
+        except ValueError:
+            if allow_blank:
+                print("Enter a whole number, leave blank, or 'q' to quit.")
+            else:
+                print("Enter a whole number or 'q' to quit.")
+
+
+def _prompt_yes_no(prompt, default=True):
+    raw = input(prompt).strip().lower()
+    if raw in ("q", "quit", "exit"):
+        return "QUIT"
+    if raw == "":
+        return default
+    return raw in ("y", "yes")
+
+
+def roll_from_db(db, *, max_year=None, include_unknown_years=True,
+                 allowed_tech=None, allowed_rarities=None, rarity_weights=None):
+    candidates = []
+    weights = []
+    rarity_weights = rarity_weights or {}
+
+    for d in db:
+        if allowed_tech and d.get("tech") not in allowed_tech:
+            continue
+        if allowed_rarities and d.get("rarity") not in allowed_rarities:
+            continue
+
+        if max_year is not None:
+            y = d.get("year")
+            if y is None and not include_unknown_years:
+                continue
+            if y is not None and y > max_year:
+                continue
+
+        candidates.append(d)
+        weights.append(rarity_weights.get(d.get("rarity", "unknown"), 1.0))
+
+    if not candidates:
+        return None
+
+    return random.choices(candidates, weights=weights, k=1)[0]
+
+
+def interactive_primitive_jumpship_roller():
+    print("Primitive JumpShip Roller")
+    print("Type 'q' at any prompt to quit.\n")
+
+    if not PRIMITIVE_JUMPSHIP_DB:
+        print("No Primitive JumpShip data loaded.")
+        print("Make sure primitive_jumpships.py is in the same folder and defines PRIMITIVE_JUMPSHIP_DB.\n")
+        return
+
+    while True:
+        max_year = _prompt_int("Max intro year? (blank = no filter): ", allow_blank=True)
+        if max_year == "QUIT":
+            print("Terminated.")
+            return
+
+        include_unknown = _prompt_yes_no("Include unknown-year classes? (y/n): ", default=True)
+        if include_unknown == "QUIT":
+            print("Terminated.")
+            return
+
+        n = _prompt_int("How many Primitive JumpShips do you want to roll? ")
+        if n == "QUIT":
+            print("Terminated.")
+            return
+        if n <= 0:
+            print("Please enter a positive integer.\n")
+            continue
+
+        for i in range(1, n + 1):
+            pick = roll_from_db(
+                PRIMITIVE_JUMPSHIP_DB,
+                max_year=max_year,
+                include_unknown_years=include_unknown,
+                # NOTE: Do NOT restrict tech here unless your DB reliably has "tech": "IS" on every row
+                rarity_weights=PRIMITIVE_RARITY_WEIGHTS,
+            )
+            if pick is None:
+                print("No matching classes found with the current filters.")
+                break
+
+            label = pick["name"]
+            if pick.get("year") is not None:
+                label += f" (intro {pick['year']})"
+            label += f" [{pick.get('rarity', 'unknown')}]"
+            print(f"PJS-{i:02d}: {label}")
+        print()
+
+        again = _prompt_yes_no("Roll again? (y/n): ", default=False)
+        if again == "QUIT" or not again:
+            print("Terminated.")
+            return
+
+
 # ============================================================
 # Menu
 # ============================================================
 
 def main_menu():
     while True:
-        choice = input("Roll what? (1=JumpShip, 2=DropShip, 3=Audit DS data, q=quit): ").strip().lower()
+        choice = input(
+            "Roll what? (1=JumpShip, 2=DropShip, 3=Audit DS data, 4=Primitive JumpShip, q=quit): "
+        ).strip().lower()
+
         if choice in ("q", "quit", "exit"):
             return
         if choice == "1":
             interactive_jumpship_roller()
-            return
+            continue
         if choice == "2":
             interactive_dropship_roller()
-            return
+            continue
         if choice == "3":
             audit_dropship_db()
-            return
-        print("Please enter 1, 2, 3, or q.")
+            continue
+        if choice == "4":
+            interactive_primitive_jumpship_roller()
+            continue
+
+        print("Please enter 1, 2, 3, 4, or q.")
 
 
 if __name__ == "__main__":
